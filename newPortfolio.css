@@ -1,0 +1,26 @@
+
+.navBars ul {
+    display: flex; /* This makes the list items horizontal */
+    list-style-type: none;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.navBars li {
+    margin: 0 15px;
+}
+
+.navBars a {
+    color: rgb(245, 209, 226);
+    padding: 8px 10px;
+    display: block;
+    transition: background-color 0.8s;
+}
+
+.navBars a:hover {
+    background-color: #e74395;
+    border-radius: 5px;
+}
+

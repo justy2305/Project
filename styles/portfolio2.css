@@ -2,56 +2,261 @@
      margin: 15;
      padding: 10;
      box-sizing: border-box;
-        }
+ }
 
-body {
-    background-color:rgb(235, 191, 206);
-    padding: 20px;
-}
+ /* Light mode (default) */
+ :root {
+     --bg-color: rgb(235, 191, 206);
+     --text-color: #070707;
+     --nav-bg: #333;
+     --nav-text: rgb(245, 209, 226);
+     --nav-hover: #e74395;
+     --border-color: #270d1d1f;
+     --contact-bg: rgb(252, 152, 169);
+     --contact-border: #270d1d;
+     --shadow: rgba(0, 0, 0, 0.1);
+ }
 
-.my-header {
-    font-family: Arial, sans-serif;
-    font-size: 40px;
-    text-align: center;
-    margin-top: 20px;
-    color: #070707;
-}
+ /* Dark mode */
+ [data-theme="dark"] {
+     --bg-color: #1a1a1a;
+     --text-color: #e0e0e0;
+     --nav-bg: #2d2d2d;
+     --nav-text: #ff69b4;
+     --nav-hover: #ff1493;
+     --border-color: #444;
+     --contact-bg: #8b3a62;
+     --contact-border: #ff69b4;
+     --shadow: rgba(255, 255, 255, 0.1);
+ }
 
-.para1 {
-    font-size: 15px;
-    line-height: 1.6;
-    max-width: 800px;
-    border:4px dotted #270d1d1f;
-    padding: 5px;
-}
+ body {
+     background-color: var(--bg-color);
+     color: var(--text-color);
+     padding: 20px;
+     transition: background-color 0.3s ease, color 0.3s ease;
+ }
 
-.My-photo {
-    width: 260px;
-    height: 300px;
-    display: block;
-    margin: auto;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+ .my-header {
+     font-family: Arial, sans-serif;
+     font-size: 40px;
+     text-align: center;
+     margin-top: 20px;
+     color: var(--text-color);
+ }
 
-.cellphone-number, .email {
-    background-color: rgb(252, 152, 169);
-    padding: 15px 25px;
-    border-radius: 5px;
-    font-size: 15px;
-    text-align: center;
-    border: 1px solid #270d1d;
-}
+ .para1 {
+     font-size: 15px;
+     line-height: 1.6;
+     max-width: 800px;
+     border: 4px dotted var(--border-color);
+     padding: 5px;
+ }
 
-.skills{
-    list-style: none;
-    padding: 0;
-}
+ .My-photo {
+     width: 260px;
+     height: 300px;
+     display: block;
+     margin: auto;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 4px 8px var(--shadow);
+ }
 
-.skills li{
-    background-color: rgb(252, 152, 169);
-    border:2px dotted #270d1d1f;
-    padding: 10px;
-    
-}
+ .cellphone-number,
+ .email {
+     background-color: var(--contact-bg);
+     padding: 15px 25px;
+     border-radius: 5px;
+     font-size: 15px;
+     text-align: center;
+     border: 1px solid var(--contact-border);
+     transition: background-color 0.3s ease;
+ }
+
+ .skills {
+     list-style: none;
+     padding: 0;
+ }
+
+ .skills li {
+     padding: 10px;
+     text-align: center;
+     height: auto;
+     font: 1.5rem;
+
+ }
+
+ #skills {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 50px;
+     text-align: center;
+     margin-top: 40px;
+     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+ }
+
+ .navBars ul {
+     display: flex;
+     /* This makes the list items horizontal */
+     list-style-type: none;
+     background-color: var(--nav-bg);
+     padding: 10px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+ }
+
+ .navBars li {
+     margin: 0 15px;
+ }
+
+ .navBars a {
+     color: var(--nav-text);
+     padding: 8px 10px;
+     display: block;
+     transition: background-color 0.8s;
+ }
+
+ .navBars a:hover {
+     background-color: var(--nav-hover);
+     border-radius: 5px;
+ }
+
+ h1 {
+     font-family: Arial, sans-serif;
+     font-size: 40px;
+     text-align: center;
+     margin-top: 20px;
+     color: var(--text-color);
+ }
+
+ .intro2 {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 15px;
+     line-height: 1.6;
+     max-width: 800px;
+     text-align: center;
+     text-align: center;
+     padding: 5px;
+     font-weight: bold;
+     /* border:4px dotted #270d1d1f;
+    padding: 5px;*/
+ }
+
+ .intro {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: bold;
+     font-size: 15px;
+     line-height: 1.6;
+     max-width: 800px;
+     text-align: center;
+     text-align: center;
+     padding: 5px;
+ }
+
+ .p1 {
+     font-size: 15px;
+     line-height: 1.6;
+     max-width: 800px;
+     border: 4px dotted var(--border-color);
+     padding: 5px;
+ }
+
+ .java-photo {
+     width: 260px;
+     height: 300px;
+     display: block;
+     margin: auto;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 4px 8px var(--shadow);
+ }
+
+ .javas-photo {
+     width: 260px;
+     height: 300px;
+     display: block;
+     margin: auto;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 4px 8px var(--shadow);
+
+ }
+
+ .MySQL-photo {
+     width: 260px;
+     height: 300px;
+     display: block;
+     margin: auto;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 4px 8px var(--shadow);
+
+ }
+
+ .html-photo {
+     width: 260px;
+     height: 300px;
+     display: block;
+     margin: auto;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 4px 8px var(--shadow);
+
+ }
+
+ .css-photo {
+     width: 260px;
+     height: 300px;
+     display: block;
+     margin: auto;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 0 4px 8px var(--shadow);
+ }
+
+ /* Theme Toggle Button Styles */
+ .theme-toggle {
+     position: fixed;
+     top: 20px;
+     right: 20px;
+     background-color: var(--nav-bg);
+     border: 2px solid var(--nav-hover);
+     border-radius: 50%;
+     width: 60px;
+     height: 60px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 24px;
+     transition: all 0.3s ease;
+     z-index: 1000;
+     box-shadow: 0 4px 8px var(--shadow);
+ }
+
+ .theme-toggle:hover {
+     transform: scale(1.1);
+     background-color: var(--nav-hover);
+ }
+
+ .theme-toggle:active {
+     transform: scale(0.95);
+ }
+
+ /* Show only sun in light mode */
+ [data-theme="light"] .theme-toggle .moon-icon {
+     display: none;
+ }
+
+ [data-theme="light"] .theme-toggle .sun-icon {
+     display: inline;
+ }
+
+ /* Show only moon in dark mode */
+ [data-theme="dark"] .theme-toggle .sun-icon {
+     display: none;
+ }
+
+ [data-theme="dark"] .theme-toggle .moon-icon {
+     display: inline;
+ }
