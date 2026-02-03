@@ -45,7 +45,7 @@
      color: var(--text-color);
  }
 
- .para1 {
+.para1 {
      font-size: 15px;
      line-height: 1.6;
      max-width: 800px;
@@ -62,7 +62,31 @@
      border-radius: 20px;
      box-shadow: 0 4px 8px var(--shadow);
  }
+.about-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    
+ }
 
+ .about-p{
+    object-fit: cover;
+    border-radius: 15px;
+
+ }
+
+
+ .p1 {
+     font-size: 15px;
+     line-height: 1.6;
+     max-width: 800px;
+     border: 2px dotted var(--border-color);
+     padding: 15px;
+ }
+
+ 
  .cellphone-number,
  .email {
      background-color: var(--contact-bg);
@@ -95,6 +119,10 @@
      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
  }
 
+ .skill-list {
+    text-align: center;
+ }
+
  .navBars ul {
      display: flex;
      /* This makes the list items horizontal */
@@ -103,6 +131,7 @@
      padding: 10px;
      border-radius: 5px;
      margin-bottom: 20px;
+     justify-content: center;
  }
 
  .navBars li {
@@ -114,6 +143,7 @@
      padding: 8px 10px;
      display: block;
      transition: background-color 0.8s;
+     text-decoration: none;
  }
 
  .navBars a:hover {
@@ -129,6 +159,8 @@
      color: var(--text-color);
  }
 
+ /*
+
  .intro2 {
      font-family: Georgia, 'Times New Roman', Times, serif;
      font-size: 15px;
@@ -138,8 +170,9 @@
      text-align: center;
      padding: 5px;
      font-weight: bold;
+     margin: 10px 0;
      /* border:4px dotted #270d1d1f;
-    padding: 5px;*/
+    padding: 5px;
  }
 
  .intro {
@@ -151,15 +184,30 @@
      text-align: center;
      text-align: center;
      padding: 5px;
+      margin: 10px 0;
  }
 
- .p1 {
-     font-size: 15px;
-     line-height: 1.6;
-     max-width: 800px;
-     border: 4px dotted var(--border-color);
-     padding: 5px;
- }
+*/
+
+.intro {
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.intro2 {
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px;
+     font-size: 25px;
+    line-height: 1.6;
+    font-weight: bold;
+    
+}
+
 
  .java-photo {
      width: 260px;
@@ -260,3 +308,4 @@
  [data-theme="dark"] .theme-toggle .moon-icon {
      display: inline;
  }
+

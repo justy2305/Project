@@ -1,6 +1,3 @@
-// Dark/Light Mode Theme Toggle
-// This script works across all pages and persists the user's preference
-
 // Get the theme toggle button
 const themeToggle = document.getElementById('theme-toggle');
 
