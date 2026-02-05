@@ -182,58 +182,15 @@
     
 }
 
-
- .java-photo {
-     width: 260px;
-     height: 300px;
-     display: block;
-     margin: auto;
-     padding: 20px;
-     border-radius: 20px;
-     box-shadow: 0 4px 8px var(--shadow);
- }
-
- .javas-photo {
-     width: 260px;
-     height: 300px;
+ .java-photo, .MySQL-photo, .css-photo, .html-photo, .javas-photo  {
+     width: 350px;
+     height: 350px;
      display: block;
      margin: auto;
      padding: 20px;
      border-radius: 20px;
      box-shadow: 0 4px 8px var(--shadow);
 
- }
-
- .MySQL-photo {
-     width: 260px;
-     height: 300px;
-     display: block;
-     margin: auto;
-     padding: 20px;
-     border-radius: 20px;
-     box-shadow: 0 4px 8px var(--shadow);
-
- }
-
- .html-photo {
-     width: 260px;
-     height: 300px;
-     display: block;
-     margin: auto;
-     padding: 20px;
-     border-radius: 20px;
-     box-shadow: 0 4px 8px var(--shadow);
-
- }
-
- .css-photo {
-     width: 260px;
-     height: 300px;
-     display: block;
-     margin: auto;
-     padding: 20px;
-     border-radius: 20px;
-     box-shadow: 0 4px 8px var(--shadow);
  }
 
  /* Theme Toggle Button Styles */
@@ -302,10 +259,10 @@
     justify-content: flex-start; 
     padding: 15px;
     font-size: 25px;
-
-
 }
-
+.emailf{
+    margin-left: 55px;
+}
 .submitb, .resetb{
      display: flex;
      gap: 80px; 
