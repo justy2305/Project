@@ -272,7 +272,7 @@
      font-size: 15px;
      text-align: center;
      border: 2px solid var(--contact-border);
-     
+     margin-left: 109px;
 }
 
 .contact-page, .index-page {
