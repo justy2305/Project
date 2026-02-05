@@ -1,32 +1,21 @@
-// Get the theme toggle button
+//  theme toggle button
+
 const themeToggle = document.getElementById('theme-toggle');
 
-// Check for saved theme preference or default to 'light' mode
 const currentTheme = localStorage.getItem('theme') || 'light';
 
-// Apply the saved theme on page load
 document.documentElement.setAttribute('data-theme', currentTheme);
 
-// Function to toggle between light and dark themes
 function toggleTheme() {
-    // Get current theme
     const theme = document.documentElement.getAttribute('data-theme');
-
-    // Switch to the opposite theme
     const newTheme = theme === 'light' ? 'dark' : 'light';
-
-    // Apply the new theme
     document.documentElement.setAttribute('data-theme', newTheme);
-
-    // Save the preference to localStorage
     localStorage.setItem('theme', newTheme);
 }
 
-// Add click event listener to the toggle button
 if (themeToggle) {
     themeToggle.addEventListener('click', toggleTheme);
 
-    // Optional: Add keyboard support (Enter or Space to toggle)
     themeToggle.addEventListener('keypress', (e) => {
         if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
@@ -34,3 +23,49 @@ if (themeToggle) {
         }
     });
 }
+
+// form validation and feedback code
+
+const form = document.querySelector("form");
+const message = document.getElementById("form-message");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const firstName = document.getElementById("first-name").value.trim();
+  const lastName = document.getElementById("last-name").value.trim();
+  const email = document.getElementById("email").value.trim();
+
+  if (firstName === "" || lastName === "" || email === "") {
+    message.textContent = "⚠️ Please fill in all fields.";
+    message.style.color = "red";
+    return;
+  }
+
+  if (!email.includes("@")) {
+    message.textContent = "⚠️ Please enter a valid email address.";
+    message.style.color = "red";
+    return;
+  }
+
+  message.textContent = "✅ Thank you! Your details have been submitted.";
+  message.style.color = "lightgreen";
+  form.reset();
+});
+
+//  dark or light mode doesnt change after refreshin the page
+
+const toggleBtn = document.getElementById("theme-toggle");
+
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+}
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  localStorage.setItem(
+    "theme",
+    document.body.classList.contains("dark-mode") ? "dark" : "light"
+  );
+});

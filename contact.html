@@ -8,7 +8,7 @@
     <title>Contact page</title>
     <link rel="stylesheet" href="styles/portfolio2.css">
 </head>
-<body>
+<body class="contact-page">
      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
         <span class="sun-icon">☀️</span>
         <span class="moon-icon">🌙</span>
@@ -23,29 +23,25 @@
             </ul>
             </div>
         </na>
-
-        <h2> For more information</h2>
-    <div>
-        <h3> Contact details</h3>
-        <a href="tel:+264816727478" class="cellphone-number">📞 </a>   
-        <a href="mailto:amutenyajusty@gmail.com" class="email"> ✉️</a>
-    </div>
-    <div>
+     <p id="form-message"></p>
+        <h2 class="moreIn"> For more information</h2>
+    
+    <div class="container">
     <form action="action_paga.php" method="PSOT">
-        <div>
-            <lable For="Fname"> first name:</lable>
+        <div class="Fname">
+            <lable For="Fname"> First name:</lable>
             <input type="text" id="fname" placeholder="Justy" required>
         </div>
 
         <br>
 
-        <div>
-            <lable For="Lname"> last name:</lable>
+        <div class="Lname">
+            <lable For="Lname"> Last name:</lable>
             <input type="text" id="Lname" placeholder="Amutenya" required>
         </div>
 
         <br>
-        <div>
+        <div class="emailf">
             <lable For="email"> email:</lable>
             <input type="email" id="email" placeholder="name@gmail.com" namil="email" required>
 
@@ -53,17 +49,18 @@
 
         <br>
         
-        <div>
+        <div class="resetb">
+            <input type="submit">
             <input type="reset">
         </div>
 
-        <br>
-
-        <div>
-            <input type="submit">
-        </div>
-
     </form>
+    </div>
+
+    <div>
+        <h3> Contact details</h3>
+        <a href="tel:+264816727478" class="cellphone-number">📞 </a>   
+        <a href="mailto:amutenyajusty@gmail.com" class="email"> ✉️</a>
     </div>
 
     <script src="portfolio2.js"></script>

@@ -54,13 +54,10 @@
  }
 
  .My-photo {
-     width: 260px;
-     height: 300px;
-     display: block;
-     margin: auto;
-     padding: 20px;
-     border-radius: 20px;
-     box-shadow: 0 4px 8px var(--shadow);
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 250px;
  }
 .about-section{
     display: flex;
@@ -72,18 +69,17 @@
  }
 
  .about-p{
-    object-fit: cover;
-    border-radius: 15px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+  text-align: center;
  }
 
 
  .p1 {
-     font-size: 15px;
-     line-height: 1.6;
-     max-width: 800px;
-     border: 2px dotted var(--border-color);
-     padding: 15px;
+    max-width: 600px;      
+     margin-top: 20px;
+    line-height: 1.6;
  }
 
  
@@ -96,6 +92,13 @@
      text-align: center;
      border: 1px solid var(--contact-border);
      transition: background-color 0.3s ease;
+
+ }
+
+ .moreIn {
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
  }
 
  .skills {
@@ -159,35 +162,6 @@
      color: var(--text-color);
  }
 
- /*
-
- .intro2 {
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size: 15px;
-     line-height: 1.6;
-     max-width: 800px;
-     text-align: center;
-     text-align: center;
-     padding: 5px;
-     font-weight: bold;
-     margin: 10px 0;
-     /* border:4px dotted #270d1d1f;
-    padding: 5px;
- }
-
- .intro {
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     font-weight: bold;
-     font-size: 15px;
-     line-height: 1.6;
-     max-width: 800px;
-     text-align: center;
-     text-align: center;
-     padding: 5px;
-      margin: 10px 0;
- }
-
-*/
 
 .intro {
     margin: 10px auto;
@@ -291,7 +265,6 @@
      transform: scale(0.95);
  }
 
- /* Show only sun in light mode */
  [data-theme="light"] .theme-toggle .moon-icon {
      display: none;
  }
@@ -300,7 +273,6 @@
      display: inline;
  }
 
- /* Show only moon in dark mode */
  [data-theme="dark"] .theme-toggle .sun-icon {
      display: none;
  }
@@ -309,3 +281,44 @@
      display: inline;
  }
 
+/* form styling */
+
+.container{
+
+  justify-content: flex-start;
+  padding: 40px;
+  border: 5px solid var(--contact-border);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 15px;
+  
+}
+
+.Fname, .Lname, .emailf{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-start; 
+    padding: 15px;
+    font-size: 25px;
+
+
+}
+
+.submitb, .resetb{
+     display: flex;
+     gap: 80px; 
+     margin-top: 15px;
+     padding: 15px 25px;
+     border-radius: 5px;
+     font-size: 15px;
+     text-align: center;
+     border: 2px solid var(--contact-border);
+     
+}
+
+.contact-page, .index-page {
+    background-image: url(../images/fl-background.jpg);
+
+}
